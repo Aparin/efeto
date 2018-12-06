@@ -1,21 +1,25 @@
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' }
+    module: {
+        rules: [{
+                test: /\.css$/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' }
+                ]
+            },
+            {
+                test: /test\.js$/,
+                use: 'mocha-loader',
+                exclude: /node_modules/
+            }
         ]
-      }
-    ]
-  },
-  entry: {
-    app: './src/app.js',
-    tests: './src/tests.js'
-  },
-  output: {
-    filename: '[name].js',
-    path: __dirname + '/dist'
-  }
+    },
+    entry: {
+        index: './src/start/index.js',
+        tests: './src/start/tests.js'
+    },
+    output: {
+        filename: '[name].js',
+        path: __dirname + '/dist'
+    }
 };
