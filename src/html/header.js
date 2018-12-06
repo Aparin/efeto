@@ -1,21 +1,35 @@
-<!DOCTYPE html>
-<html>
+import { mkNode } from '../html/makeDOMelement';
+const insert = (target, node) => {
+    document.querySelector(target).appendChild(node);
+}
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Efeto.ru: Сайты под ключ, интернет-магазины, скрипты, веб-приложения</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+// фон хэдера
+insert('body', mkNode({ tg: 'nav', style: 'navbar navbar-expand-lg navbar-dark bg-dark' }));
 
-<body>
-    <!----------------- Header ----------------->
-    <!--
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">EFETO.ru: веб под ключ</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+// лого
+const logo = mkNode({ tg: 'a', style: 'navbar-brand', text: 'EFETO.ru: веб под ключ', url: '#' });
+insert('nav', logo);
+
+
+//  решётка мобильного меню
+const html = mkNode({ tg: 'span', style: 'navbar-toggler-icon' }).outerHTML;
+const toggle = mkNode({
+    tg: 'button',
+    style: 'navbar-toggler',
+    html: html,
+    url: '#',
+    type: 'button',
+    toggle: 'collapse',
+    target: '#navbarColor02',
+    controls: 'navbarColor02',
+    expanded: 'false',
+    label: 'Toggle navigation'
+});
+
+insert('nav', toggle);
+
+/*
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav mr-auto">
@@ -42,9 +56,4 @@
             </form>
         </div>
     </nav>
-    -->
-    <script src="index.js"></script>
-
-</body>
-
-</html>
+    */

@@ -1,3 +1,3 @@
-import { makeDOMelement as mkEl } from '../html/makeDOMelement';
+import './header';
 
 // mkEl('h1', '', 'Hello, EFETO!');

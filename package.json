@@ -11,6 +11,11 @@
     "author": "Апарин Александр",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.2.0",
+        "@babel/preset-env": "^7.2.0",
+        "babel-loader": "^8.0.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-3": "^6.24.1",
         "css-loader": "^1.0.1",
         "mocha-loader": "^2.0.0",
         "style-loader": "^0.23.1",

@@ -1,18 +1,12 @@
 module.exports = {
     module: {
         rules: [{
-                test: /\.css$/,
-                use: [
-                    { loader: 'style-loader' },
-                    { loader: 'css-loader' }
-                ]
-            },
-            {
-                test: /test\.js$/,
-                use: 'mocha-loader',
-                exclude: /node_modules/
-            }
-        ]
+            test: /\.css$/,
+            use: [
+                { loader: 'style-loader' },
+                { loader: 'css-loader' }
+            ]
+        }]
     },
     entry: {
         index: './src/start/index.js',

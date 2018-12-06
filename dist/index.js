@@ -141,6 +141,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./src/html/header.js":
+/*!****************************!*\
+  !*** ./src/html/header.js ***!
+  \****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _html_makeDOMelement__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../html/makeDOMelement */ \"./src/html/makeDOMelement.js\");\n\r\nconst insert = (target, node) => {\r\n    document.querySelector(target).appendChild(node);\r\n}\r\n\r\n// фон хэдера\r\ninsert('body', Object(_html_makeDOMelement__WEBPACK_IMPORTED_MODULE_0__[\"mkNode\"])({ tg: 'nav', style: 'navbar navbar-expand-lg navbar-dark bg-dark' }));\r\n\r\n// лого\r\nconst logo = Object(_html_makeDOMelement__WEBPACK_IMPORTED_MODULE_0__[\"mkNode\"])({ tg: 'a', style: 'navbar-brand', text: 'EFETO.ru: веб под ключ', url: '#' });\r\ninsert('nav', logo);\r\n\r\n\r\n//  решётка мобильного меню\r\nconst html = Object(_html_makeDOMelement__WEBPACK_IMPORTED_MODULE_0__[\"mkNode\"])({ tg: 'span', style: 'navbar-toggler-icon' }).outerHTML;\r\nconst toggle = Object(_html_makeDOMelement__WEBPACK_IMPORTED_MODULE_0__[\"mkNode\"])({\r\n    tg: 'button',\r\n    style: 'navbar-toggler',\r\n    html: html,\r\n    url: '#',\r\n    type: 'button',\r\n    toggle: 'collapse',\r\n    target: '#navbarColor02',\r\n    controls: 'navbarColor02',\r\n    expanded: 'false',\r\n    label: 'Toggle navigation'\r\n});\r\n\r\ninsert('nav', toggle);\r\n\r\n/*\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">\r\n            <ul class=\"navbar-nav mr-auto\">\r\n                <li class=\"nav-item active\">\r\n                    <a class=\"nav-link\" href=\"#\">главная <span class=\"sr-only\">(current)</span></a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" href=\"#\">магазины</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" href=\"#\">сайты</a>\r\n                </li>\r\n\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" href=\"#\">скрипты</a>\r\n                </li>\r\n                <li class=\"nav-item\">\r\n                    <a class=\"nav-link\" href=\"#\">приложения</a>\r\n                </li>\r\n            </ul>\r\n            <form class=\"form-inline my-2 my-lg-0\">\r\n                <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">\r\n                <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>\r\n            </form>\r\n        </div>\r\n    </nav>\r\n    */\n\n//# sourceURL=webpack:///./src/html/header.js?");
+
+/***/ }),
+
 /***/ "./src/html/index.js":
 /*!***************************!*\
   !*** ./src/html/index.js ***!
@@ -149,7 +161,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _html_makeDOMelement__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../html/makeDOMelement */ \"./src/html/makeDOMelement.js\");\n\r\n\r\n// mkEl('h1', '', 'Hello, EFETO!');\n\n//# sourceURL=webpack:///./src/html/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/html/header.js\");\n\r\n\r\n// mkEl('h1', '', 'Hello, EFETO!');\n\n//# sourceURL=webpack:///./src/html/index.js?");
 
 /***/ }),
 
@@ -157,11 +169,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _htm
 /*!************************************!*\
   !*** ./src/html/makeDOMelement.js ***!
   \************************************/
-/*! exports provided: default */
+/*! exports provided: mkNode */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return makeDOMelement; });\nfunction makeDOMelement(tagName, className, text, id) {\r\n    const element = document.createElement(tagName);\r\n    if (className) {\r\n        const clNms = className.split(' ');\r\n        clNms.forEach(function(item) {\r\n            element.classList.add(item);\r\n        });\r\n\r\n    }\r\n    if (text) {\r\n        element.textContent = text;\r\n    }\r\n    if (id) {\r\n        element.id = id;\r\n    }\r\n\r\n    return element;\r\n};\n\n//# sourceURL=webpack:///./src/html/makeDOMelement.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mkNode\", function() { return mkNode; });\nconst mkNode = (data) => {\r\n    const {\r\n        tg,\r\n        style,\r\n        text,\r\n        html,\r\n        id,\r\n        url,\r\n        type,\r\n        toggle,\r\n        target,\r\n        controls,\r\n        expanded,\r\n        label\r\n    } = data;\r\n\r\n    const node = document.createElement(tg);\r\n    if (style) {\r\n        const classNames = style.split(' ');\r\n        classNames.forEach(function(item) {\r\n            node.classList.add(item);\r\n        });\r\n    }\r\n    if (text) { node.textContent = text; }\r\n    if (html) { node.innerHTML = html; }\r\n    if (id) { node.id = id; }\r\n    if (url) { node.href = url; }\r\n    if (type) { node.type = type }\r\n    if (toggle) { node.setAttribute('data-toggle', toggle) }\r\n    if (target) { node.setAttribute('data-target', target) }\r\n    if (controls) { node.setAttribute('aria-controls', controls) }\r\n    if (expanded) { node.setAttribute('aria-expanded', expanded) }\r\n    if (label) { node.setAttribute('aria-label', label) }\r\n    return node;\r\n};\r\n\r\n\n\n//# sourceURL=webpack:///./src/html/makeDOMelement.js?");
 
 /***/ }),
 
