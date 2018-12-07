@@ -5,8 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "webpack --mode development --watch",
-        "build": "webpack --mode production --watch",
-        "tests": "webpack --module-bind 'mocha-loader!./dist/tests'"
+        "build": "webpack --mode production --watch"
     },
     "author": "Апарин Александр",
     "license": "ISC",

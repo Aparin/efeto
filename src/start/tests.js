@@ -1,4 +1,4 @@
-import { mkNode } from '../html/makeDOMelement';
+import { mkNode } from '../html/makeNode';
 
 describe('makeDOMelement', function() {
     it(`Проверка создания узла`, function() {

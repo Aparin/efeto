@@ -1,4 +1,4 @@
-import { mkNode } from '../html/makeDOMelement';
+import { mkNode } from '../html/makeNode';
 const insert = (target, node) => {
     document.querySelector(target).appendChild(node);
 }
@@ -25,35 +25,28 @@ const toggle = mkNode({
     expanded: 'false',
     label: 'Toggle navigation'
 });
-
 insert('nav', toggle);
 
-/*
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">главная <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">магазины</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">сайты</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">скрипты</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">приложения</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    */
+// меню
+const menu = mkNode({ tg: 'div', style: 'collapse navbar-collapse', id: 'navbarColor02' });
+const ul = mkNode({ tg: 'ul', style: 'navbar-nav mr-auto' });
+const itCont = `
+  <li class="nav-item active">
+  <a class="nav-link" href="#">главная <span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">магазины</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">сайты</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">скрипты</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">приложения</a>
+  </li>
+`;
+ul.insertAdjacentHTML('afterbegin', itCont);
+menu.appendChild(ul);
+insert('nav', menu);
