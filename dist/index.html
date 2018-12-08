@@ -5,16 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Создание сайтов, интернет-магазинов, скриптов, веб-приложений; копирайтинг">
-    <meta name="author" content="">
-    <link rel="icon" href="">
-
     <title>Efeto.ru: Сайты под ключ, интернет-магазины, скрипты, веб-приложения</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../src/start/cerulean-bootstrap.css" rel="stylesheet">
+    <link href="../src/start/font-awesome.min.css" rel="stylesheet">
+    <link href="../src/start/icon.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../src/start/album.css" rel="stylesheet">
+    <style>
+
+    </style>
 
 </head>
 
@@ -30,25 +32,37 @@
                         <h4>Мы небольшая семейная компания. <br> Александр делает сайты и программирует, <br> Анна занимается копирайтингом и соц. сетями.
                         </h4>
                     </div>
-                    <div class="col-sm-5  py-5">
+                    <div id="mainContacts" class="col-sm-5  py-5">
                         <h2>Контакты:</h2>
-                        <h4>Александр: <a class="lnk-success" href="#">позвонить</a>, <a href="#">написать</a><br /> Анна: <a href="#">позвонить</a>, <a href="#">написать</a></h4>
+                        <h4 class="btn-group">Александр:
+                            <a class="socBtn"><i data-contacts="alex-tel" class="fa fa-paper-plane fa-1x"></i></a>
+                            <a class="socBtn"><i data-contacts="alex-vk" class="fa fa-vk fa-1x"></i></a>
+                            <a class="socBtn"><i data-contacts="alex-sk" class="fa fa-skype fa-1x"></i></a>
+                            <a class="socBtn"><i data-contacts="alex-ph" class="fa fa-phone fa-1x"></i></a>
+                        </h4>
+                        <br />
+                        <h4 class="btn-group">Анна:
+                            <a class="socBtn" href="#" target="_blank"><i class="fa fa-whatsapp fa-1x"></i></a>
+                            <a class="socBtn" href="https://vk.com/id85981752" target="_blank"><i class="fa fa-vk fa-1x"></i></a>
+                            <a class="socBtn" href="#" target="_blank"><i class="fa fa-paper-plane fa-1x"></i></a>
+                            <a class="socBtn" href="#" target="_blank"><i class="fa fa-phone fa-1x"></i></a>
+                        </h4>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Header -->
-        <div class="navbar navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                     <h2>Efeto.ru: веб под ключ</h2>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                <button class="navbar-toggler btn-warning  disabled" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-------------------------- Content area ----------------------------------->
@@ -60,7 +74,7 @@
             <div class="list-group col-lg-7">
                 <a href="#" class="list-group-item list-group-item-action active">
                     <strong><big>Сделать интернет-магазин или сайт</big></strong>
-                    <p>Быстрые самописные; на CMS: Woocommerce, WordPress, Joomla и т.д.; комбинированные.</p>
+                    <p>Быстрые самописные; на CMS: Woocommerce, WordPress, Joomla; комбинированные.</p>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <strong><big>Сделать большое веб-приложение
@@ -70,16 +84,16 @@
                 </a>
                 <a href="#" class="list-group-item list-group-item-action active">
                     <strong><big>Написать скрипт</big></strong>
-                    <p>Калькуляторы, графики, управление рекламой и т.д.)</p>
+                    <p>Калькуляторы, тесты, графики, управление рекламой и т.д.</p>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     <strong><big>Провести рекламную компанию </big></strong>
                     <p>Написать продающий текст, настроить контекстную рекламу, написать серию e-mail писем и постов в соц. сети</p>
                 </a>
             </div>
-            <p>
-                <a href="# " class="btn btn-primary btn-lg my-2 ">Позвоните нам</a>
-                <a href="# " class="btn btn-secondary btn-lg my-2 ">Напишите нам</a>
+            <p style="margin-top: 20px;">
+                <a href="# " class="btn btn-primary btn-lg my-2 ">Напишите нам</a>
+                <a href="# " class="btn btn-secondary btn-lg my-2 ">Позвоните нам</a>
             </p>
         </section>
 
@@ -90,14 +104,14 @@
                 <div class="row ">
                     <div class="col-md-12 text-center">
                         <div class="card mb-6 shadow-sm ">
-                            <h2>StickyNotes: веб-приложение для коротких записок с поиском</h2>
-                            <img class="card-img-top " src="./img/sn.png " style="width:80%; margin: auto;" alt="веб-приложение коротких записок ">
+                            <h2 style="margin: 15px;">StickyNotes: веб-приложение для коротких записок с поиском</h2>
+                            <img class="card-img-top " src="./img/sn2.png " style="width:80%; margin: auto;" alt="веб-приложение коротких записок ">
                             <div class="card-body ">
                                 <p class="text-primary"> <big><strong>Поиск по ключевым словам, заголовкам, содержимому. Вы быстро найдёте свою записку спустя годы!</strong></big></p>
                                 <div class="d-flex justify-content-between align-items-center ">
-                                    <div class="btn-group" style="margin: 0 auto;">
-                                        <button type="button" class="btn btn-primary">Заказать такую-же</button>
-                                        <button type="button " class="btn btn-light ">Заказать похожую</button>
+                                    <div class="btn-block" style="margin: 0 auto;">
+                                        <button type="button" class="btn btn-lg btn-primary" style="margin: 5px;">Заказать такое же</button>
+                                        <button type="button" class="btn btn-lg btn-warning" style="margin: 5px;">Посмотреть в работе</button>
                                     </div>
 
                                 </div>
@@ -116,10 +130,9 @@
     <footer class="text-muted ">
         <div class="container ">
             <p class="float-right ">
-                <a href="# ">Back to top</a>
+                <a href="# ">Наверх</a>
             </p>
-            <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p>New to Bootstrap? <a href="../../ ">Visit the homepage</a> or read our <a href="../../getting-started/ ">getting started guide</a>.</p>
+            <p>Efeto.ru - веб под ключ © 2018</p>
         </div>
     </footer>
 
