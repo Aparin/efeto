@@ -14,5 +14,7 @@ export default function mainListeners() {
         if (action === 'anna-tel') document.body.appendChild(popup("Мой телеграм:<br> +7 920 670 1712"));
         if (action === 'anna-ph') document.body.appendChild(popup("Мой телефон: +7 920 670 1712.<br> Звоните в рабочие дни с 10 до 18 МСК"));
     });
-
+    writeUs.onclick = (() => {
+        document.body.appendChild(popup("", 300));
+    });
 }

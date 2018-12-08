@@ -1,2 +1,2 @@
 import '../main/mainTests';
-import '../globally/globallyTests';
+import '../globally/globalTests';
