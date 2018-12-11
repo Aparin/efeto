@@ -9,7 +9,7 @@ module.exports = {
         }]
     },
     entry: {
-        index: './src/start/index.js',
+        index: './src/efeto/efeto.js',
         tests: './src/start/tests.js'
     },
     output: {
