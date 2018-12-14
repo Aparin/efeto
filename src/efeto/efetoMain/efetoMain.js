@@ -2,8 +2,8 @@ import efetoMainListeners from './efetoMainListeners';
 import mkNode from '../makeNode';
 
 
-const snImg = mkNode({ tg: 'img', src: '../src/efeto/img/sn.png', classes: 'card-img-top', maxWidth: '420px', height: 'auto', margin: 'auto' });
-const minSmm = mkNode({ tg: 'img', src: '../src/pages/smm/img/maed-mini.jpeg', classes: 'card-img-top', maxWidth: '649px', height: 'auto', margin: 'auto' });
+const snImg = mkNode({ tg: 'img', src: '../dist/pages/sn/img/sn.png', classes: 'card-img-top', maxWidth: '420px', height: 'auto', margin: 'auto' });
+const minSmm = mkNode({ tg: 'img', src: '../dist/pages/smm/maed-mini.jpeg', classes: 'card-img-top', maxWidth: '649px', height: 'auto', margin: 'auto' });
 
 
 const efetoMain =
@@ -60,7 +60,7 @@ const efetoMain =
                 </div>
 
                 <!-- SMM -->
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 text-center" style="margin-top: 2rem;">
                     <div class="card mb-6 shadow-sm ">
                         <h2 style="margin: 15px;">Посты для ваших групп в соц. сетях</h2>
                                         
@@ -69,7 +69,7 @@ const efetoMain =
                             
                             <div class="d-flex justify-content-between align-items-center ">
                                 <div class="btn-block" style="margin: 0 auto;">                               
-                                    <a href="pages/smm.html" type="button" class="btn btn-lg btn-warning" style="margin: 5px;">Прочитать полностью</a>
+                                    <a href="pages/smm/smm.html" type="button" class="btn btn-lg btn-warning" style="margin: 5px;">Прочитать полностью</a>
                                 </div>
 
                             </div>

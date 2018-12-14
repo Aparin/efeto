@@ -5,7 +5,7 @@ import footer from '../../efeto/footer';
 import annaContacts from '../../globally/popup/annaContacts';
 
 
-const imgSmm = mkNode({ tg: 'img', src: '../../src/pages/smm/img/maed.jpeg', classes: 'card-img-top', maxWidth: '960px', height: 'auto', margin: 'auto' });
+const imgSmm = mkNode({ tg: 'img', src: 'maed.jpeg', classes: 'card-img-top', maxWidth: '960px', height: 'auto', margin: 'auto' });
 
 const smm = `
 
