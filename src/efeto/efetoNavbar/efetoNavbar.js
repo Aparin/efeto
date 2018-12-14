@@ -1,6 +1,6 @@
 import efetoNavbarListeners from './efetoNavbsrListeners';
-import '../stylesAndScripts/cerulean-bootstrap.css';
-import '../stylesAndScripts/icon.css';
+import '../../../dist/stylesAndScripts/cerulean-bootstrap.css';
+import '../../../dist/stylesAndScripts/icon.css';
 
 const navbarEfeto =
     ` <header>

@@ -1,5 +1,4 @@
 import mkNode from '../../efeto/makeNode';
-import '../../start/cerulean-bootstrap.css';
 import '../../efeto/efetoNavbar/efetoNavbar';
 import footer from '../../efeto/footer';
 import annaContacts from '../../globally/popup/annaContacts';

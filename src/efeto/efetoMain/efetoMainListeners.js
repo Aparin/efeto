@@ -1,4 +1,3 @@
-import popup from '../../globally/popup/';
 import alexContacts from '../../globally/popup/alexContacts';
 import ourContacts from '../../globally/popup/ourContacts';
 

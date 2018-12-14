@@ -1,9 +1,9 @@
 import efetoMainListeners from './efetoMainListeners';
 import mkNode from '../makeNode';
+import '../../../dist/stylesAndScripts/album.css';
 
-
-const snImg = mkNode({ tg: 'img', src: '../dist/pages/sn/img/sn.png', classes: 'card-img-top', maxWidth: '420px', height: 'auto', margin: 'auto' });
-const minSmm = mkNode({ tg: 'img', src: '../dist/pages/smm/maed-mini.jpeg', classes: 'card-img-top', maxWidth: '649px', height: 'auto', margin: 'auto' });
+const snImg = mkNode({ tg: 'img', src: 'sn/img/sn.png', classes: 'card-img-top', maxWidth: '420px', height: 'auto', margin: 'auto' });
+const minSmm = mkNode({ tg: 'img', src: 'pages/smm/maed-mini.jpeg', classes: 'card-img-top', maxWidth: '649px', height: 'auto', margin: 'auto' });
 
 
 const efetoMain =
@@ -12,12 +12,12 @@ const efetoMain =
 <main role="main">
 
     <section class="conteiner text-center ">
-        <h1 style="margin: 2rem; text-align:center; font-size: 3rem; line-height: 3rem;">Чем мы можем вам помочь?</h1>
+        <h1 style="margin: 2rem; text-align:center; font-size: 3rem; line-height: 2.6rem;">Чем мы можем вам помочь?</h1>
         <div class="list-group col-lg-7">
             <a id="makeSite" style="color: white; cursor: pointer; font-size: 2.2rem; line-height: 2.2rem; padding: 2.2rem;" class="list-group-item list-group-item-action active">
-                Сделать интернет-магазин или сайт
+                Сделать сайт или интернет-магазин
             </a>
-            <a href="pages/sn/index.html" style="font-size: 2rem; line-height: 2rem;" class="list-group-item list-group-item-action">
+            <a href="sn/" style="font-size: 2rem; line-height: 2rem;" class="list-group-item list-group-item-action">
                Сделать большое веб-приложение 
                 <p style="font-size: 1.4rem; line-height: 1.4rem; margin-top: 0.4rem;">например, удобную систему виртуальных записок с быстрым поиском</p>
             </a>
@@ -25,7 +25,7 @@ const efetoMain =
                 Написать скрипт для сайта
                 <p style="font-size: 1.4rem; line-height: 1.4rem; margin-top: 0.4rem;">Калькуляторы, тесты, графики, управление рекламой и т.д.</p>
             </a>
-            <a  href="pages/smm.html" style="cursor: pointer; font-size: 2rem; line-height: 2rem;"  class="list-group-item list-group-item-action">
+            <a  href="pages/smm/smm.html" style="cursor: pointer; font-size: 2rem; line-height: 2rem;"  class="list-group-item list-group-item-action">
                 Копирайтинг и соц. сети
                 <p style="font-size: 1.4rem; line-height: 1.4rem; margin-top: 0.4rem;">Написать продающий текст, серию e-mail писем или постов в соц. сети</p>
             </a>
@@ -51,7 +51,7 @@ const efetoMain =
                             <div class="d-flex justify-content-between align-items-center ">
                                 <div class="btn-block" style="margin: 0 auto;">
                                     <button id="orderSN" type="button" class="btn btn-lg btn-primary" style="margin: 5px;">Заказать такое же</button>
-                                    <a href="pages/sn/index.html" type="button" class="btn btn-lg btn-warning" style="margin: 5px;">Посмотреть в работе</a>
+                                    <a href="sn/" type="button" class="btn btn-lg btn-warning" style="margin: 5px;">Посмотреть в работе</a>
                                 </div>
 
                             </div>
