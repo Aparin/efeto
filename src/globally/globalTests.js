@@ -1,4 +1,4 @@
-import popup from './popUp';
+import popup from './popup/';
 
 describe('popup', function() {
     it(`Проверка создания попапа`, function() {

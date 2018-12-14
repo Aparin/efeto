@@ -1,4 +1,4 @@
-import { mkNode } from '../html/makeNode';
+import mkNode from '../efeto/makeNode';
 const insert = (target, node) => {
     document.querySelector(target).appendChild(node);
 }

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/efeto/efeto.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/efeto/efetoNavbar/efetoNavbar.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -152,42 +152,6 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
-/***/ "./src/efeto/efeto.js":
-/*!****************************!*\
-  !*** ./src/efeto/efeto.js ***!
-  \****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesAndScripts_cerulean_bootstrap_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stylesAndScripts/cerulean-bootstrap.css */ \"./src/efeto/stylesAndScripts/cerulean-bootstrap.css\");\n/* harmony import */ var _stylesAndScripts_cerulean_bootstrap_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_stylesAndScripts_cerulean_bootstrap_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _efetoNavbar_efetoNavbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./efetoNavbar/efetoNavbar */ \"./src/efeto/efetoNavbar/efetoNavbar.js\");\n/* harmony import */ var _efetoMain_efetoMain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./efetoMain/efetoMain */ \"./src/efeto/efetoMain/efetoMain.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ \"./src/efeto/footer.js\");\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n//# sourceURL=webpack:///./src/efeto/efeto.js?");
-
-/***/ }),
-
-/***/ "./src/efeto/efetoMain/efetoMain.js":
-/*!******************************************!*\
-  !*** ./src/efeto/efetoMain/efetoMain.js ***!
-  \******************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _efetoMainListeners__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./efetoMainListeners */ \"./src/efeto/efetoMain/efetoMainListeners.js\");\n/* harmony import */ var _makeNode__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../makeNode */ \"./src/efeto/makeNode.js\");\n\r\n\r\n\r\n\r\nconst snImg = Object(_makeNode__WEBPACK_IMPORTED_MODULE_1__[\"default\"])({ tg: 'img', src: '../src/efeto/img/sn.png', classes: 'card-img-top', maxWidth: '420px', height: 'auto', margin: 'auto' });\r\nconst minSmm = Object(_makeNode__WEBPACK_IMPORTED_MODULE_1__[\"default\"])({ tg: 'img', src: '../src/pages/smm/img/maed-mini.jpeg', classes: 'card-img-top', maxWidth: '649px', height: 'auto', margin: 'auto' });\r\n\r\n\r\nconst efetoMain =\r\n    ` <!-------------------------- Content area ----------------------------------->\r\n\r\n<main role=\"main\">\r\n\r\n    <section class=\"conteiner text-center \">\r\n        <h1 style=\"margin: 2rem; text-align:center; font-size: 3rem; line-height: 3rem;\">Чем мы можем вам помочь?</h1>\r\n        <div class=\"list-group col-lg-7\">\r\n            <a id=\"makeSite\" style=\"color: white; cursor: pointer;\" class=\"list-group-item list-group-item-action active\">\r\n                <strong><big>Сделать интернет-магазин или сайт</big></strong>\r\n                <p>Быстрые самописные; на CMS: Woocommerce, WordPress, Joomla; комбинированные.</p>\r\n            </a>\r\n            <a href=\"pages/sn/index.html\" class=\"list-group-item list-group-item-action\">\r\n                <strong><big>Сделать большое веб-приложение\r\n                    </big>\r\n                    </strong>\r\n                <p>например, удобную систему виртуальных записок с быстрым поиском</p>\r\n            </a>\r\n            <a href=\"\" class=\"list-group-item list-group-item-action active\">\r\n                <strong><big>Написать скрипт</big></strong>\r\n                <p>Калькуляторы, тесты, графики, управление рекламой и т.д.</p>\r\n            </a>\r\n            <a href=\"\" class=\"list-group-item list-group-item-action\">\r\n                <strong><big>Провести рекламную компанию </big></strong>\r\n                <p>Написать продающий текст, настроить контекстную рекламу, написать серию e-mail писем и постов в соц. сети</p>\r\n            </a>\r\n        </div>\r\n        <p style=\"margin-top: 20px;\">\r\n            <button id=\"writeUs\" class=\"btn btn-warning btn-lg my-2 \">Задать вопрос / сделать заказ</button>\r\n\r\n        </p>\r\n    </section>\r\n\r\n    <!---------------------- Примеры работ ---------------------->\r\n    <div class=\"album py-5 bg-light \">\r\n        <div class=\"container \">\r\n            <!--stickyNotes -->\r\n            <div class=\"row \">\r\n                <div class=\"col-md-12 text-center\">\r\n                    <div class=\"card mb-6 shadow-sm \">\r\n                        <h2 style=\"margin: 15px;\">StickyNotes: веб-приложение для коротких записок с поиском</h2>                      \r\n                        <p class=\"text-info\"> <big><strong>Поиск по ключевым словам, заголовкам, содержимому. Вы быстро найдёте свою записку спустя годы!</strong></big></p>\r\n                        ${snImg.outerHTML}\r\n                                           \r\n                        <div class=\"card-body \">       \r\n                            <div class=\"d-flex justify-content-between align-items-center \">\r\n                                <div class=\"btn-block\" style=\"margin: 0 auto;\">\r\n                                    <button id=\"orderSN\" type=\"button\" class=\"btn btn-lg btn-primary\" style=\"margin: 5px;\">Заказать такое же</button>\r\n                                    <a href=\"pages/sn/index.html\" type=\"button\" class=\"btn btn-lg btn-warning\" style=\"margin: 5px;\">Посмотреть в работе</a>\r\n                                </div>\r\n\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n                <!-- SMM -->\r\n                <div class=\"col-md-12 text-center\">\r\n                    <div class=\"card mb-6 shadow-sm \">\r\n                        <h2 style=\"margin: 15px;\">Посты (в т.ч. продающие) для ваших групп в соц. сетях</h2>\r\n                                        \r\n                        ${minSmm.outerHTML}\r\n                        <div class=\"card-body \">\r\n                            \r\n                            <div class=\"d-flex justify-content-between align-items-center \">\r\n                                <div class=\"btn-block\" style=\"margin: 0 auto;\">                               \r\n                                    <a href=\"pages/smm.html\" type=\"button\" class=\"btn btn-lg btn-warning\" style=\"margin: 5px;\">Прочитать полностью</a>\r\n                                </div>\r\n\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</main>\r\n`;\r\ndocument.querySelector('body').insertAdjacentHTML('beforeend', efetoMain);\r\nObject(_efetoMainListeners__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/efeto/efetoMain/efetoMain.js?");
-
-/***/ }),
-
-/***/ "./src/efeto/efetoMain/efetoMainListeners.js":
-/*!***************************************************!*\
-  !*** ./src/efeto/efetoMain/efetoMainListeners.js ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return efetoMainListeners; });\n/* harmony import */ var _globally_popup___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../globally/popup/ */ \"./src/globally/popup/index.js\");\n/* harmony import */ var _globally_popup_alexContacts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../globally/popup/alexContacts */ \"./src/globally/popup/alexContacts.js\");\n\r\n\r\n\r\nfunction efetoMainListeners() {\r\n    writeUs.onclick = ((e) => {\r\n        Object(_globally_popup___WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\r\n            msg: `\r\n        <p><b>Александр</b> <br> (сайты, программирование):\r\n        <a href=\"https://t.me/aaaparin\" target=\"_black\">Телеграм</a>, <a href=\"https://vk.com/aaaparin\" target=\"_black\">ВКонтакте</a>, <a href=\"https://join.skype.com/invite/gAH0dYmscpwf\" target=\"_black\">Skype</a><br>\r\n        Почта: alex@efeto.ru. <br>\r\n        Телефон: +7 920 671 7000. Рабочие дни с 10 до 18 МСК</p>\r\n            \r\n        <p><b>Анна</b> (копирайтинг, соц. сети): <br>\r\n        Viber, WhatsApp, Телеграмм, телефон: +7 920 670 1712. <br>\r\n        Почта: anna@efeto.ru. <a href=\"https://vk.com/id85981752\" target=\"_black\">ВКонтакте</a><br>\r\n        Пишите и звоните в рабочие дни с 10 до 18 МСК.</p>\r\n        `,\r\n            height: 360,\r\n            e: e\r\n        });\r\n    });\r\n    orderSN.onclick = ((e) => {\r\n        Object(_globally_popup___WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\r\n            msg: `\r\n                <p><b>Александр</b> <br> (сайты, программирование):\r\n                <a href=\"https://t.me/aaaparin\" target=\"_black\">Телеграм</a>, <a href=\"https://vk.com/aaaparin\" target=\"_black\">ВКонтакте</a>, <a href=\"https://join.skype.com/invite/gAH0dYmscpwf\" target=\"_black\">Skype</a><br>\r\n                Почта: alex@efeto.ru. <br>\r\n                Телефон: +7 920 671 7000. Рабочие дни с 10 до 18 МСК</p>\r\n            `,\r\n            height: 200,\r\n            e: e\r\n        });\r\n    });\r\n    makeSite.onclick = ((e) => Object(_globally_popup_alexContacts__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(e));\r\n}\n\n//# sourceURL=webpack:///./src/efeto/efetoMain/efetoMainListeners.js?");
-
-/***/ }),
-
 /***/ "./src/efeto/efetoNavbar/efetoNavbar.js":
 /*!**********************************************!*\
   !*** ./src/efeto/efetoNavbar/efetoNavbar.js ***!
@@ -212,30 +176,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
-/***/ "./src/efeto/footer.js":
-/*!*****************************!*\
-  !*** ./src/efeto/footer.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst footer = () => {\r\n    const ftr =\r\n        `\r\n<footer class=\"text-muted \">\r\n  <div class=\"container \">\r\n    <p class=\"float-right \">\r\n        <a href=\"# \">Наверх</a>\r\n    </p>\r\n    <p>Efeto.ru - веб под ключ © 2018</p>\r\n  </div>\r\n</footer>\r\n`;\r\n\r\n    document.querySelector('body').insertAdjacentHTML('beforeend', ftr);\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (footer);\n\n//# sourceURL=webpack:///./src/efeto/footer.js?");
-
-/***/ }),
-
-/***/ "./src/efeto/makeNode.js":
-/*!*******************************!*\
-  !*** ./src/efeto/makeNode.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst mkNode = (data) => {\r\n    const {\r\n        tg,\r\n        classes,\r\n        width,\r\n        maxWidth,\r\n        height,\r\n        margin,\r\n        text,\r\n        html,\r\n        id,\r\n        url,\r\n        src,\r\n        type,\r\n        toggle,\r\n        target,\r\n        controls,\r\n        expanded,\r\n        label\r\n    } = data;\r\n\r\n    const node = document.createElement(tg);\r\n    if (classes) {\r\n        const classNames = classes.split(' ');\r\n        classNames.forEach(function(item) {\r\n            node.classList.add(item);\r\n        });\r\n    }\r\n    if (width) { node.style.width = width; }\r\n    if (maxWidth) { node.style.maxWidth = maxWidth; }\r\n    if (height) { node.style.height = height; }\r\n\r\n    if (margin) { node.style.margin = margin; }\r\n    if (text) { node.textContent = text; }\r\n    if (html) { node.innerHTML = html; }\r\n    if (id) { node.id = id; }\r\n    if (url) { node.href = url; }\r\n    if (src) { node.src = src; }\r\n    if (type) { node.type = type }\r\n    if (toggle) { node.setAttribute('data-toggle', toggle) }\r\n    if (target) { node.setAttribute('data-target', target) }\r\n    if (controls) { node.setAttribute('aria-controls', controls) }\r\n    if (expanded) { node.setAttribute('aria-expanded', expanded) }\r\n    if (label) { node.setAttribute('aria-label', label) }\r\n    return node;\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (mkNode);\n\n//# sourceURL=webpack:///./src/efeto/makeNode.js?");
-
-/***/ }),
-
 /***/ "./src/efeto/stylesAndScripts/cerulean-bootstrap.css":
 /*!***********************************************************!*\
   !*** ./src/efeto/stylesAndScripts/cerulean-bootstrap.css ***!
@@ -255,18 +195,6 @@ eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!./icon.css */ \"./node_modules/css-loader/index.js!./src/efeto/stylesAndScripts/icon.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/efeto/stylesAndScripts/icon.css?");
-
-/***/ }),
-
-/***/ "./src/globally/popup/alexContacts.js":
-/*!********************************************!*\
-  !*** ./src/globally/popup/alexContacts.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _popup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./popup */ \"./src/globally/popup/popup.js\");\n\r\n\r\nconst alexContacts = (e) => {\r\n    Object(_popup__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\r\n        msg: `\r\n        <p><b>Александр</b> <br> (сайты, программирование):\r\n        <a href=\"https://t.me/aaaparin\" target=\"_black\">Телеграм</a>, <a href=\"https://vk.com/aaaparin\" target=\"_black\">ВКонтакте</a>, <a href=\"https://join.skype.com/invite/gAH0dYmscpwf\" target=\"_black\">Skype</a><br>\r\n        Почта: alex@efeto.ru. <br>\r\n        Телефон: +7 920 671 7000. Рабочие дни с 10 до 18 МСК</p>\r\n    `,\r\n        height: 200,\r\n        e: e\r\n    });\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (alexContacts);\n\n//# sourceURL=webpack:///./src/globally/popup/alexContacts.js?");
 
 /***/ }),
 

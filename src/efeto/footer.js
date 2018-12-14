@@ -1,5 +1,6 @@
-const footer =
-    `
+const footer = () => {
+    const ftr =
+        `
 <footer class="text-muted ">
   <div class="container ">
     <p class="float-right ">
@@ -10,4 +11,6 @@ const footer =
 </footer>
 `;
 
-document.querySelector('body').insertAdjacentHTML('beforeend', footer);
+    document.querySelector('body').insertAdjacentHTML('beforeend', ftr);
+}
+export default footer;

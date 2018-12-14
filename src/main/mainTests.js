@@ -1,4 +1,4 @@
-import { mkNode } from '../html/makeNode';
+import mkNode from '../efeto/makeNode';
 
 describe('makeDOMelement', function() {
     it(`Проверка создания узла`, function() {
