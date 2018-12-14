@@ -2,7 +2,7 @@ import mkNode from '../../efeto/makeNode';
 import '../../start/cerulean-bootstrap.css';
 import '../../efeto/efetoNavbar/efetoNavbar';
 import footer from '../../efeto/footer';
-import popup from '../../globally/popup';
+import annaContacts from '../../globally/popup/annaContacts';
 
 
 const imgSmm = mkNode({ tg: 'img', src: '../../src/pages/smm/img/maed.jpeg', classes: 'card-img-top', maxWidth: '960px', height: 'auto', margin: 'auto' });
@@ -38,17 +38,6 @@ const smm = `
 </div>
 `;
 document.querySelector('body').insertAdjacentHTML('beforeend', smm);
-orderSMM.onclick = ((e) => {
-    popup({
-        msg: `
-        <p><b>Анна</b> (копирайтинг, соц. сети): <br>
-        Viber, WhatsApp, Телеграмм, телефон: +7 920 670 1712. <br>
-        Почта: anna@efeto.ru. <a href="https://vk.com/id85981752" target="_black">ВКонтакте</a><br>
-        Пишите и звоните в рабочие дни с 10 до 18 МСК.</p>
-        `,
-        height: 200,
-        e: e
-    });
-});
+orderSMM.onclick = ((e) => { annaContacts(e) });
 
 footer();

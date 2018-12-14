@@ -15,7 +15,6 @@ export default function popup(data) {
     let left = e.clientX;
     if (left > 320) { left -= 310 } else left = 15;
     if (window.innerWidth < 335) node.style.width = '300px';
-    console.log(window.innerWidth);
     node.style.left = left + 'px';
 
     let top = e.clientY;

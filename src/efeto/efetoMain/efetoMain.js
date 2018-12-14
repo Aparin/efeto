@@ -14,33 +14,30 @@ const efetoMain =
     <section class="conteiner text-center ">
         <h1 style="margin: 2rem; text-align:center; font-size: 3rem; line-height: 3rem;">Чем мы можем вам помочь?</h1>
         <div class="list-group col-lg-7">
-            <a id="makeSite" style="color: white; cursor: pointer;" class="list-group-item list-group-item-action active">
-                <strong><big>Сделать интернет-магазин или сайт</big></strong>
-                <p>Быстрые самописные; на CMS: Woocommerce, WordPress, Joomla; комбинированные.</p>
+            <a id="makeSite" style="color: white; cursor: pointer; font-size: 2.2rem; line-height: 2.2rem; padding: 2.2rem;" class="list-group-item list-group-item-action active">
+                Сделать интернет-магазин или сайт
             </a>
-            <a href="pages/sn/index.html" class="list-group-item list-group-item-action">
-                <strong><big>Сделать большое веб-приложение
-                    </big>
-                    </strong>
-                <p>например, удобную систему виртуальных записок с быстрым поиском</p>
+            <a href="pages/sn/index.html" style="font-size: 2rem; line-height: 2rem;" class="list-group-item list-group-item-action">
+               Сделать большое веб-приложение 
+                <p style="font-size: 1.4rem; line-height: 1.4rem; margin-top: 0.4rem;">например, удобную систему виртуальных записок с быстрым поиском</p>
             </a>
-            <a href="" class="list-group-item list-group-item-action active">
-                <strong><big>Написать скрипт</big></strong>
-                <p>Калькуляторы, тесты, графики, управление рекламой и т.д.</p>
+            <a id="makeScript" style="color: white; cursor: pointer; font-size: 2rem; line-height: 2rem;" class="list-group-item list-group-item-action active">
+                Написать скрипт для сайта
+                <p style="font-size: 1.4rem; line-height: 1.4rem; margin-top: 0.4rem;">Калькуляторы, тесты, графики, управление рекламой и т.д.</p>
             </a>
-            <a href="" class="list-group-item list-group-item-action">
-                <strong><big>Провести рекламную компанию </big></strong>
-                <p>Написать продающий текст, настроить контекстную рекламу, написать серию e-mail писем и постов в соц. сети</p>
+            <a  href="pages/smm.html" style="cursor: pointer; font-size: 2rem; line-height: 2rem;"  class="list-group-item list-group-item-action">
+                Копирайтинг и соц. сети
+                <p style="font-size: 1.4rem; line-height: 1.4rem; margin-top: 0.4rem;">Написать продающий текст, серию e-mail писем или постов в соц. сети</p>
             </a>
         </div>
         <p style="margin-top: 20px;">
-            <button id="writeUs" class="btn btn-warning btn-lg my-2 ">Задать вопрос / сделать заказ</button>
+            <button id="writeUs" class="btn btn-info btn-lg my-2 ">Задать вопрос / сделать заказ</button>
 
         </p>
     </section>
 
     <!---------------------- Примеры работ ---------------------->
-    <div class="album py-5 bg-light ">
+    <div class="album py-5 bg-light" style="padding-top: 1rem !important;">
         <div class="container ">
             <!--stickyNotes -->
             <div class="row ">
@@ -65,7 +62,7 @@ const efetoMain =
                 <!-- SMM -->
                 <div class="col-md-12 text-center">
                     <div class="card mb-6 shadow-sm ">
-                        <h2 style="margin: 15px;">Посты (в т.ч. продающие) для ваших групп в соц. сетях</h2>
+                        <h2 style="margin: 15px;">Посты для ваших групп в соц. сетях</h2>
                                         
                         ${minSmm.outerHTML}
                         <div class="card-body ">
