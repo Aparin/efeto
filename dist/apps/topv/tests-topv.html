@@ -22,7 +22,14 @@
 </head>
 
 <body>
-    <div id='stickyNotes'></div>
+    <div id='root'></div>
+    <div id='right'>
+        <p><span id='timer'></span></p>
+        <p><span id='mistake'></span></p>
+        <div id='result'>
+            <span id='resultMessage'></span>
+        </div>
+    </div>
 
     <!-- здесь находятся тесты -->
     <script src='tests.js'></script>
@@ -34,7 +41,7 @@
     <script>
         mocha.run();
     </script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=0299c42e-268e-4337-9740-e158b72d29fd&lang=ru_RU" type="text/javascript"></script>
+
 </body>
 
 </html>

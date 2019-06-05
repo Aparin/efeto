@@ -2,7 +2,7 @@ import efetoMainListeners from './efetoMainListeners';
 import mkNode from '../makeNode';
 import '../../../dist/stylesAndScripts/album.css';
 
-const snImg = mkNode({ tg: 'img', src: 'sn/img/sn.png', classes: 'card-img-top', maxWidth: '420px', height: 'auto', margin: 'auto' });
+const snImg = mkNode({ tg: 'img', src: 'sn/img/sn.png', classes: 'card-img-top', maxWidth: '420px', height: '800px', margin: 'auto' });
 const minSmm = mkNode({ tg: 'img', src: 'pages/smm/maed-mini.jpeg', classes: 'card-img-top', maxWidth: '649px', height: 'auto', margin: 'auto' });
 
 
